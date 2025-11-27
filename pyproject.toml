@@ -1,0 +1,46 @@
+[project]
+name = "etdevs"
+version = "0.1.0"
+description = "Python package and CLI utility to support embedded test device management for on-target functional testing"
+authors = [
+    {name = "Infineon Technologies"}
+]
+license = "MIT"
+readme = "README.md"
+keywords = ["embedded", "testing", "device-management", "usb", "serial"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Testing",
+    "Topic :: System :: Hardware",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "pyserial>=3.5",
+    "PyYAML>=6.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Infineon/etdevs"
+Repository = "https://github.com/Infineon/etdevs"
+Documentation = "https://github.com/Infineon/etdevs"
+
+[project.scripts]
+etdevs-query = "etdevs.devs_query:main"
+
+[tool.poetry]
+packages = [{include = "etdevs", from = "src"}]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "twine (>=6.2.0,<7.0.0)"
+]

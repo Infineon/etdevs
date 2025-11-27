@@ -1,0 +1,29 @@
+name: Build check
+
+on:
+  push:
+
+jobs:
+  build-check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install Poetry
+      uses: snok/install-poetry@v1
+      with:
+        version: latest
+
+    - name: Install dependencies
+      run: poetry install --with dev
+
+    - name: Build package
+      run: poetry build
+
+    - name: Check package
+      run: poetry run python -m twine check dist/*

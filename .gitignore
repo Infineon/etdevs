@@ -27,7 +27,7 @@ share/python-wheels/
 MANIFEST
 
 # Sphinx documentation
-docs/_build/
+docs/build/
 
 # Environments
 .env

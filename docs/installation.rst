@@ -32,3 +32,6 @@ See https://github.com/mvp/uhubctl for further information.
 
    sudo apt update
    sudo apt install uhubctl
+
+If you get ``There were permission problems while accessing USB`` when running
+``uhubctl``, refer to :ref:`requirements-uhubctl`.

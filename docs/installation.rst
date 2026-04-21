@@ -6,32 +6,15 @@ Install package
 
 .. code-block:: bash
 
-   pip install .
-
-Development install
--------------------
-
-.. code-block:: bash
-
-   pip install -e .
-
-Install docs dependencies
--------------------------
-
-.. code-block:: bash
-
-   pip install -r docs/requirements.txt
+   pip install etdevs
 
 (Optional) Install ``uhubctl``
 ------------------------------
 
 Currently, there is native support for using `uhubctl` to control the USB port.
+The provided `scripts/install_uhubctl.sh` script should ease the installation of `uhubctl`.
 See https://github.com/mvp/uhubctl for further information.
 
 .. code-block:: bash
 
-   sudo apt update
-   sudo apt install uhubctl
-
-If you get ``There were permission problems while accessing USB`` when running
-``uhubctl``, refer to :ref:`requirements-uhubctl`.
+    ./scripts/install_uhubctl.sh

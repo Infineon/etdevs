@@ -17,7 +17,7 @@ Quick Start
 
 .. code-block:: bash
 
-   pip install .
+   pip install etdevs
    etdevs-query address
 
 Project Structure
@@ -31,10 +31,10 @@ Project Structure
    │   ├── devs_query.py    # CLI entry point for etdevs-query
    │   └── uhubctl.py       # Wrapper around the uhubctl system tool
    ├── scripts/
-   │   └── install_uhubctl.sh
+   │   └── install_uhubctl.sh # Helper script for installing uhubctl on Linux
    ├── tests/
    │   ├── devs.yml         # Example device list used by tests
-   │   └── test_*.py
+   │   └── test_*.py        # Unit tests for the package
    └── docs/
 
 .. toctree::
@@ -42,7 +42,6 @@ Project Structure
    :caption: Overview
 
    motivation
-   requirements
    installation
 
 .. toctree::
@@ -57,4 +56,3 @@ Project Structure
    :caption: Reference
 
    device-yaml
-   enabling-switches

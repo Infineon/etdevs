@@ -8,9 +8,6 @@ It covers three core tasks:
 - load known devices from YAML
 - power-cycle switchable USB ports through ``uhubctl``
 
-.. warning::
-
-   This is version 0.1.0 (Beta). The API and documentation may evolve.
 
 Quick Start
 -----------
